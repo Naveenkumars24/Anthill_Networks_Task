@@ -28,10 +28,49 @@ Develop a web-based platform for buying and selling second-hand cars seamlessly.
 ✔️ Request to purchase a car  
 
 ## 🌐 Live Demo  
-🔗 [Click here to view the deployed app](#) *(Replace `#` with your actual deployment URL)*  
+🔗 [Click here to view the deployed app](https://carbooking-9908f.web.app/) 
 
 ## 📦 Project Setup  
 
 1. **Clone the repository:**  
    ```sh
    git clone https://github.com/Naveenkumars24/Anthill_Networks_Task
+   ```
+2. **Navigate to the project folder:**  
+   ```sh
+   cd CarSpace  
+   ```
+3. **Install dependencies:**  
+   ```sh
+   npm install  
+   ```
+4. **Start the development server:**  
+   ```sh
+   npm run dev  
+   ```
+5. **Build for production (optional):**  
+   ```sh
+   npm run build  
+   ```
+
+## 📁 Folder Structure  
+
+```
+Task1/
+│── dist/                  # Compiled files
+│── public/                # Static files
+│── src/                   # Source code
+│   ├── .firebaserc       
+│   ├── .gitignore        
+│   ├── README.md         
+│── eslint.config.js      
+│── firebase.json         
+│── firestore.indexes.json
+│── firestore.rules       
+│── index.html            
+│── package-lock.json     
+│── package.json          
+│── vite.config.js        
+```
+
+🚀 Enjoy building and managing your car marketplace with **CarSpace**! 🚗💨  

@@ -1,0 +1,350 @@
+body{
+    background-color: #FFFFFF;
+    
+}
+.car-features-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left:90px;
+}
+
+.feature-button {
+    background-color: #ddd9d9;
+    color: #1886d0;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.feature-button:hover {
+    background-color: #e5e5e5;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .car-features-box {
+        justify-content: flex-start;
+    }
+
+    .feature-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+.car-image-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Main Car Image */
+.main-car-image {
+    width: 90%;
+    max-width: 1450px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 4px solid #e5e8eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-car-image img {
+    width: 100%;
+    height: 400px;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Thumbnail Images */
+.sub-car-image {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    /* margin-right: 100px; */
+   
+}
+
+.sub-car-image img {
+    width: 220px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.sub-car-image img:hover {
+    border-color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .main-car-image {
+        width: 95%;
+    }
+
+    .sub-car-image img {
+        width: 140px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-car-image {
+        gap: 10px;
+    }
+
+    .sub-car-image img {
+        width: 110px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-car-image img {
+        width: 80px;
+        height: 60px;
+    }
+}
+/* Container Layout */
+.car-overview-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Left Side: Car Description and Overview */
+.car-description {
+    flex: 1;
+    max-width: 100%;
+}
+
+.car-search-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.car-search-title h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    border-left: 4px solid #1886d0;
+    padding-left: 10px;
+}
+
+.car-description p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+/* Car Overview Section */
+.car-overview {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 20px 40px;
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    max-width: 500px;
+}
+
+.car-overview span {
+    font-weight: bold;
+}
+
+/* Main Container */
+.owner-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Top Buttons */
+  .action-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .red-btn {
+    background: #1886d0;
+    color: white;
+  }
+  
+  .white-btn {
+    background: white;
+    color: #1886d0;
+    border: 2px solid #1886d0;
+  }
+  
+  .white-btn:hover {
+    background: #1886d0;
+    color: white;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Owner Avatar */
+  .avatar {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Owner Name */
+  .owner-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+  }
+  
+  /* Owner Role */
+  .owner-role {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .input-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-fields label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .input-fields input,
+  .input-fields textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Contact Button */
+  .contact-btn {
+    width: 100%;
+    padding: 12px;
+    /* background: rgb(202, 15, 15); */
+    background: #1886d0;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  .contact-btn:hover {
+    background: rgb(0, 60, 139);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .owner-profile {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .car-overview-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-description {
+        max-width: 100%;
+    }
+
+    .car-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .owner-profile {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .car-overview {
+        grid-template-columns: 1fr;
+    }
+}
+
+.car-details-price {
+    margin-left: auto; /* Pushes it to the right */
+    font-weight: bold;
+    margin-right: 60px;
+   font-size: 25px;
+   font-weight: 600;
+   color: #b11c12;
+}
+
+
+
+

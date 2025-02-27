@@ -1,0 +1,13 @@
+services:
+ api:
+    image: naveenkumars24/bus-booking-system:latest
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URI: mongodb+srv://naveenkumars2022ece:Naveen2418kumar_@bus-booking-sytem-backe.sylmp.mongodb.net/bus-booking-system?retryWrites=true&w=majority&appName=bus-booking-sytem-backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
